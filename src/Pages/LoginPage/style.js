@@ -12,7 +12,7 @@ export const AppContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #3572ef;
 
   width: 600px;
   height: 100vh;
