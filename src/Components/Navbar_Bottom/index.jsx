@@ -1,10 +1,7 @@
 import * as s from "./style";
 import { HomeSVG, PartnerSVG, ProfileSVG, ShopSVG, HomeActiveSVG, PartnerActiveSVG, ProfileActiveSVG, ShopActiveSVG } from "../../Assets/svgs";
-import { useState } from "react";
 
-function Navbar() {
-  const [selected, setSelected] = useState("Home");
-
+function BottomNavbar({ selected, setSelected }) {
   const handleIconClick = (icon) => {
     setSelected(icon);
   };
@@ -31,4 +28,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default BottomNavbar;

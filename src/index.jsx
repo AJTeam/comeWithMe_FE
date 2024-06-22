@@ -10,7 +10,8 @@ root.render(
   <Router>
     <GlobalStyle />
     <Routes>
-      <Route path="/" element={<P.MainPage />} />
+      <Route path="/" element={<P.LoginPage />} />
+      <Route path="/mainpage" element={<P.MainPage />} />
     </Routes>
   </Router>
 );

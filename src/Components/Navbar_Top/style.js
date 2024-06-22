@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const NavbarContainer = styled.div`
   display: flex;
   position: absolute;
-  bottom: 0;
-  justify-content: space-around;
+  top: 0;
+  justify-content: space-between;
   align-items: center;
-  width: 600px;
+  height: 120px;
 
   @media (max-width: 600px) {
-    width: 100%;
+    width: 90%;
+  }
+
+  @media (min-width: 600px) {
+    width: 550px;
   }
 `;
 
@@ -17,10 +21,9 @@ export const NavbarIconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 `;
 
-export const NavBarIconText = styled.p`
-  font-size: 12px;
-  color: ${(props) => (props.selected ? "#3572EF" : "#a2a2a9")};
+export const NavBarText = styled.p`
+  font-size: 22px;
+  font-weight: bold;
 `;
